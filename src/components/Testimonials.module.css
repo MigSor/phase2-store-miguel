@@ -1,0 +1,13 @@
+.wrapper {
+   text-align: center;
+   width: 100vw;
+   height: 700px;
+}
+
+.heading hr {
+   border: none;
+   border-bottom: 5px solid dodgerblue;
+   border-radius: 8px;
+   width: 8%;
+   margin: 5px auto;
+}
