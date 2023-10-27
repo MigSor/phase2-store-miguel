@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Features.module.css";
-import FeaturesCard from "./FeaturesCard";
+import FeaturesCard from "./Card";
 import warranty from "../assets/warranty.png";
 import exchange from "../assets/exchange.png";
 import payment from "../assets/credit-cards.png";
