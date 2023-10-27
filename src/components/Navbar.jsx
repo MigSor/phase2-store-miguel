@@ -1,17 +1,17 @@
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 function Navbar() {
    return (
-      <nav className="nav">
-         <div className="logo">FakeStore</div>
-         <div className="nav-links">
-            <NavLink className="nav-link" to="/" exact={true}>
+      <nav className={styles.nav}>
+         <div className={styles.logo}>FakeStore</div>
+         <div className={styles.navLinks}>
+            <NavLink style={(isActive) => ({ color: isActive ? "white" : "black" })} className={styles.navLink} to="/" exact={true}>
                Home
             </NavLink>
-            <NavLink className="nav-link" to="/about">
+            <NavLink style={(isActive) => ({ color: isActive ? "white" : "black" })} className={styles.navLink} to="/about">
                About
             </NavLink>
-            <NavLink className="nav-link" to="/products">
+            <NavLink style={(isActive) => ({ color: isActive ? "white" : "black" })} className={styles.navLink} to="/products">
                Products
             </NavLink>
          </div>

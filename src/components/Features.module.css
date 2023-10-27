@@ -1,11 +1,15 @@
 .wrapper {
    width: 100vw;
-   height: 700px;
+   height: 900px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 30px;
+   background-image: url("https://uploads-ssl.webflow.com/6150fc97b11e848cdb37692f/6151b3aaa49dd81532a699bf_Vector2.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 0 90%;
 }
 
 .hr {
@@ -21,4 +25,7 @@
    display: flex;
    width: 100%;
    justify-content: space-around;
+}
+
+.body {
 }

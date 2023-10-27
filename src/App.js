@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom/cjs/react-route
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
+import Footer from "./components/Footer";
 
 function App() {
    return (
@@ -13,6 +14,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/products" component={Products} />
+            <Footer />
          </Router>
       </div>
    );

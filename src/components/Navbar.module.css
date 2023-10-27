@@ -1,0 +1,32 @@
+.nav {
+   background-color: dodgerblue;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+}
+
+.logo {
+   color: white;
+   font-size: 1.5rem;
+   letter-spacing: 2px;
+}
+
+.navLinks {
+   position: relative;
+   right: 45%;
+}
+
+.navLink {
+   margin-right: 10px;
+   text-decoration: none;
+   color: black;
+   font-size: 1.2rem;
+   letter-spacing: 2px;
+   transition: all 400ms ease;
+}
+
+.active {
+   color: white;
+}

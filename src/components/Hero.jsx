@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import CtaButton from "../components/CtaButton";
+import styles from "../pages/Home.module.css";
 function Hero() {
    const history = useHistory();
 
@@ -7,10 +8,10 @@ function Hero() {
       history.push("/products");
    }
    return (
-      <div className="hero">
-         <div className="hero-left">
+      <div className={styles.hero}>
+         <div className={styles.heroLeft}>
             <h1>
-               Welcome to <strong className="store-name">FakeStore</strong>
+               Welcome to <strong className={styles.storeName}>FakeStore</strong>
             </h1>
             <h3>Surprise your loved ones this Christmas Season</h3>
             <h3>

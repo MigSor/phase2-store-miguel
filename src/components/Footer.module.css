@@ -1,0 +1,19 @@
+.wrapper {
+   width: 100vw;
+   background-color: dodgerblue;
+   display: flex;
+   justify-content: space-around;
+   padding: 20px 30px;
+   color: white;
+   cursor: pointer;
+}
+
+.storeInfo {
+   display: flex;
+   gap: 50px;
+}
+
+.location {
+   display: flex;
+   gap: 50px;
+}

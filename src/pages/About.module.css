@@ -1,0 +1,26 @@
+.wrapper {
+   background-image: url("https://uploads-ssl.webflow.com/6150fc97b11e848cdb37692f/6151b3aaa49dd81532a699bf_Vector2.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 0 90%;
+   display: flex;
+}
+
+.about {
+   width: 50%;
+   padding: 20px 30px;
+}
+
+.aboutImgDiv {
+   width: 50%;
+   padding: 20px 0 20px 30px;
+   position: relative;
+}
+
+.aboutImgDiv img {
+   width: 80%;
+   position: absolute;
+   top: 20px;
+   right: 0;
+   border-radius: 5px;
+}
