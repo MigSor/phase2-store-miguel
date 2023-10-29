@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Products.module.css";
-import FeaturesCard from "../components/Card";
+import Card from "../components/Card";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function Products() {
    const [products, setProducts] = useState([]);
    const [favorites, setFavourites] = useState([]);
+   const history = useHistory();
 
    useEffect(() => {
       fetch("https://fakestoreapi.com/products")
@@ -29,13 +31,11 @@ function Products() {
       fetch("http://localhost:3000/favorites", options)
          .then((res) => res.json())
          .then((data) => {
-            console.log(data);
             setFavourites([...favorites, data]);
          });
    }
 
    function deleteFavorite(favorite) {
-      console.log(favorite);
       fetch(`http://localhost:3000/favorites/${favorite.id}`, {
          method: "DELETE",
       })
@@ -45,6 +45,10 @@ function Products() {
                .then((res) => res.json())
                .then((data) => setFavourites(data))
          );
+   }
+
+   function goToProductDetails(product) {
+      history.push(`/products/${product.title}`, product);
    }
 
    return (
@@ -61,7 +65,8 @@ function Products() {
             {products?.map((product) => {
                return (
                   <>
-                     <FeaturesCard
+                     <Card
+                        goToProductDetails={() => goToProductDetails(product)}
                         key={product.id}
                         title={product.title}
                         img={product.image}

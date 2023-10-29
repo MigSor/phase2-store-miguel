@@ -3,8 +3,8 @@
    height: 80px;
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   padding: 0 20px;
+   align-items: baseline;
+   padding: 20px;
 }
 
 .logo {
@@ -15,7 +15,6 @@
 
 .navLinks {
    position: relative;
-   right: 45%;
 }
 
 .navLink {
@@ -28,5 +27,69 @@
 }
 
 .active {
+   color: white;
+}
+
+.login {
+   cursor: pointer;
+   transition: color 700ms ease;
+}
+
+.login:hover {
+   color: white;
+}
+
+.modalWrapper {
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgb(0, 0, 0, 0.4);
+   padding: 300px 0 0;
+}
+
+.modal {
+   position: relative;
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+}
+
+.modal form {
+   display: flex;
+   flex-direction: column;
+}
+
+.modal h3 {
+   text-align: center;
+}
+
+.modal h5 {
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   cursor: pointer;
+}
+
+.modal input {
+   margin-block: 20px;
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 1.1rem;
+}
+
+.myAccount {
+   transition: color 700ms ease;
+   cursor: pointer;
+}
+
+.myAccount:hover {
    color: white;
 }

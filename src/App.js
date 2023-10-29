@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Footer from "./components/Footer";
+import Account from "./pages/Account";
+import ProductModal from "./components/ProductModal";
 
 function App() {
    return (
@@ -14,6 +16,8 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/products" component={Products} />
+            <Route path="/products/:name" component={ProductModal} />
+            <Route path="/account" component={Account} />
             <Footer />
          </Router>
       </div>

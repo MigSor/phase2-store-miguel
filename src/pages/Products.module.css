@@ -17,6 +17,13 @@
    padding: 10px;
 }
 
+.sidebar ul li {
+   list-style: none;
+   line-height: 25px;
+   font-size: 1.1rem;
+   margin-bottom: 10px;
+}
+
 .products {
    width: 80%;
    height: 100vh;
