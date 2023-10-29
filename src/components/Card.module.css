@@ -4,9 +4,9 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 10px;
+   gap: 5px;
    width: 280px;
-   height: 350px;
+   height: 410px;
    padding: 5px;
 }
 

@@ -11,7 +11,13 @@ function ProductModal() {
    return (
       <div className={styles.wrapper}>
          <div className={styles.modal}>
-            <h5 className={styles.close} onClick={() => history.goBack()}>
+            <h5
+               className={styles.close}
+               onClick={(e) => {
+                  e.stopPropagation();
+                  history.goBack();
+               }}
+            >
                X
             </h5>
             <div className={styles.info}>
