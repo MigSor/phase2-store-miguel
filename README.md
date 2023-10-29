@@ -8,10 +8,6 @@ This project is designed to demonstrate the use of React in building the fronten
 
 **Key Features:**
 
--  **Zero-Coding Mock API:** Get a full fake REST API with zero coding in less than 30 seconds (seriously). Perfect for quick prototyping and mocking.
-
--  **Developer-Friendly:** Created with <3 for front-end developers who need a quick back-end solution for their projects.
-
 -  **Client-Side Routing:** The project also uses `react-router-dom` for client-side routing, allowing for smooth navigation between different parts of the application.
 
 -  **E-commerce Simulation:** Fakestore was created to mimic an e-commerce website, offering a sample selection of men's and women's clothing, jewelry, and electronics.
