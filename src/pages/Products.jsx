@@ -15,7 +15,7 @@ function Products() {
    }, []);
 
    useEffect(() => {
-      fetch(" http://localhost:3000/favorites")
+      fetch(" https://phase2-server.onrender.com/favorites")
          .then((res) => res.json())
          .then((data) => setFavourites(data));
    }, []);
@@ -28,7 +28,7 @@ function Products() {
          },
          body: JSON.stringify(product),
       };
-      fetch("http://localhost:3000/favorites", options)
+      fetch("https://phase2-server.onrender.com/favorites", options)
          .then((res) => res.json())
          .then((data) => {
             setFavourites([...favorites, data]);
@@ -36,12 +36,12 @@ function Products() {
    }
 
    function deleteFavorite(favorite) {
-      fetch(`http://localhost:3000/favorites/${favorite.id}`, {
+      fetch(`https://phase2-server.onrender.com/favorites/${favorite.id}`, {
          method: "DELETE",
       })
          .then((res) => res.json())
          .then(() =>
-            fetch(" http://localhost:3000/favorites")
+            fetch(" https://phase2-server.onrender.com/favorites")
                .then((res) => res.json())
                .then((data) => setFavourites(data))
          );

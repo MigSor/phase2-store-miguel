@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useLocation, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import styles from "./ProductModal.module.css";
 function ProductModal() {

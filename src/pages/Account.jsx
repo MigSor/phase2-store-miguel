@@ -5,7 +5,7 @@ function Account() {
    const [user, setUser] = useState([]);
 
    useEffect(() => {
-      fetch("http://localhost:3000/users")
+      fetch("https://phase2-server.onrender.com/users")
          .then((res) => res.json())
          .then((data) => {
             setUser(data[data.length - 1]);

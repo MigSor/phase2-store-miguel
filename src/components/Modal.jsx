@@ -28,7 +28,7 @@ function Modal({ toggleModal, toggleLoggedIn }) {
          },
          body: JSON.stringify(userData),
       };
-      fetch("http://localhost:3000/users", options)
+      fetch("https://phase2-server.onrender.com/users", options)
          .then((res) => res.json())
          .then((data) => {
             setIsSignedUp(!isSignedUp);

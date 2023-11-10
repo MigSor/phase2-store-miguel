@@ -24,6 +24,7 @@ function Footer() {
                style={{ border: "0" }}
                allowFullScreen=""
                loading="lazy"
+               title="google maps"
                referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <div className="locationInfo">
